@@ -1,0 +1,13 @@
+html
+	body
+		input(type="submit" value ="Home" onclick="window.location='/admin_home';")
+		center
+			h1 Add a course
+			p Enter the details of the course
+			p
+				form(action="/add" method="post")
+					label Course Code
+					input(type="text" name="c_id")
+					labe Course Name
+					input(type="text" name="c_name")
+					input(type="submit" value="ADD")

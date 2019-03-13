@@ -1,0 +1,14 @@
+html
+	body
+		input(type="submit" value ="Home" onclick="window.location='/admin_home';")
+		center
+			h1 Edit the course details of a course
+			p
+				form(action="/edit_det" method="post")
+					label Course ID
+					input(type="text" name="c_id")
+					label Name
+					input(type="text" name="c_name")
+					label Status
+					input(type="text" name="status")
+					input(type="submit")

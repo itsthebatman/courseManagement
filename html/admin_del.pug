@@ -1,0 +1,13 @@
+html
+	body
+		input(type="submit" value ="Home" onclick="window.location='/admin_home';")
+		center
+			h1 Delete a course
+			p Enter the code for the course you want to delete
+			p
+				form(action="/delete" method="post")
+					label Course Code
+					input(type="text" name="c_id")
+					input(type="submit" value="Delete")
+			p Courses you can delete are
+			h3 #{list}

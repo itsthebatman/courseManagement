@@ -1,0 +1,13 @@
+html
+	body
+		input(type="submit" value ="Home" onclick="window.location='/stud_home';")
+		center
+			h1 Course Enrollment
+			p Enter the code for the course you want to enroll
+			p
+				form(action="/enroll" method="post")
+					label Course Code
+					input(type="text" name="c_id")
+					input(type="submit" value="Enroll")
+			p Courses you can enroll for are
+			h3 #{list}
